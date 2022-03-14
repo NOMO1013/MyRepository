@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： localhost:3306
--- 產生時間： 2022-03-11 07:14:12
+-- 產生時間： 2022-03-14 15:04:51
 -- 伺服器版本： 5.7.24
 -- PHP 版本： 7.4.16
 
@@ -46,19 +46,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`memberID`, `account`, `password`, `name`, `sex`, `birthday`, `cellphone`, `hide`, `city`, `town`, `img`) VALUES
-(1, 'guest@mail.com', '123', '阿凱', '男', '1997-10-13', '(0968) 568-854', '隱藏', '台北市', '大安區師大路 20 號', './images/indexlogo.jpg	'),
-(2, 'firemoon1013@gmail.com', '123', '梁建功', '男', '1997-10-13', '0988451401', '隱藏', '臺中市', '西區', './upload/20220304_184429.jpg'),
+(1, 'guest@mail.com', '202cb962ac59075b964b07152d234b70', '阿凱', '男', '1997-10-13', '(0968) 568-854', '隱藏', '台北市', '大安區師大路 20 號', './images/indexlogo.jpg	'),
+(2, 'firemoon1013@gmail.com', '202cb962ac59075b964b07152d234b70', '梁建功', '男', '1997-10-13', '0988451401', '隱藏', '臺中市', '西區', './upload/20220304_184429.jpg'),
 (10, '123@mail.com', '202cb962ac59075b964b07152d234b70', 'JJJ', '女', '2022-03-04', '123456789', '公開', '臺中市', '中區', './upload/20220308_0939010.png'),
-(11, '1234@mail.com', '123', '好睡貓', '女', '2020-02-20', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(12, '1013@mail.com', '123', '梁建功2', '男', '2022-03-05', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(13, 'firemoon10131@gmail.com', '123', '梁建功', '男', '2022-03-09', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
+(11, '1234@mail.com', '202cb962ac59075b964b07152d234b70', '好睡貓', '女', '2020-02-20', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
+(12, '1013@mail.com', '202cb962ac59075b964b07152d234b70', '梁建功2', '男', '2022-03-05', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
+(13, 'firemoon10131@gmail.com', '202cb962ac59075b964b07152d234b70', '梁建功', '男', '2022-03-09', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
 (15, 'guest2@mail.com', '202cb962ac59075b964b07152d234b70', 'G3', '男', '2022-03-10', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
 (16, 'tonyliang9@gmail.com', '202cb962ac59075b964b07152d234b70', '梁建功', '男', '1997-10-13', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
 (17, 'guest3@mail.com', '202cb962ac59075b964b07152d234b70', 'G3', '男', '2022-03-11', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(18, 'apple1234@mail.com', 'e10adc3949ba59abbe56e057f20f883e', '路易吉', '男', '1993-10-11', '0912345678', '隱藏', '', '', './upload/20220311_0928480.png'),
+(18, 'apple1234@mail.com', '202cb962ac59075b964b07152d234b70', '路易吉', '男', '1993-10-11', '0912345678', '隱藏', '', '', './upload/20220311_0928480.png'),
 (20, 'JJJ@mail.com', '202cb962ac59075b964b07152d234b70', 'QQQ', '男', '2022-03-01', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(22, 'mayr81214@gmail.com', 'caf1a3dfb505ffed0d024130f58c5cfa', '葉登發', '男', '2022-03-17', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(23, 'ps19431942@yahoo.com.tw', '2e65f2f2fdaf6c699b223c61b1b5ab89', 'JJJ', '男', '2022-03-03', NULL, NULL, NULL, NULL, './images/indexlogo.jpg');
+(22, 'mayr81214@gmail.com', '202cb962ac59075b964b07152d234b70', '葉登發', '男', '2022-03-17', NULL, NULL, NULL, NULL, './images/indexlogo.jpg');
 
 --
 -- 已傾印資料表的索引
@@ -78,7 +77,7 @@ ALTER TABLE `users`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `users`
 --
 ALTER TABLE `users`
-  MODIFY `memberID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `memberID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

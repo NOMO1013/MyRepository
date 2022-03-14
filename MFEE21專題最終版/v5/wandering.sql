@@ -2,10 +2,10 @@
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Mar 11, 2022 at 05:23 AM
--- Server version: 5.7.24
--- PHP Version: 7.4.16
+-- 主機： localhost:3306
+-- 產生時間： 2022-03-14 15:06:24
+-- 伺服器版本： 5.7.24
+-- PHP 版本： 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wandering`
+-- 資料庫： `wandering`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `adopt`
+-- 資料表結構 `adopt`
 --
 
 CREATE TABLE `adopt` (
@@ -48,7 +48,7 @@ CREATE TABLE `adopt` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `adopt`
+-- 傾印資料表的資料 `adopt`
 --
 
 INSERT INTO `adopt` (`id`, `memberID`, `title`, `type`, `ear`, `ligation`, `nickname`, `gender`, `city`, `town`, `img`, `reason`, `status`, `adoptcondition`, `adopt_city`, `date`, `adoptID`) VALUES
@@ -62,7 +62,7 @@ INSERT INTO `adopt` (`id`, `memberID`, `title`, `type`, `ear`, `ligation`, `nick
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rescue`
+-- 資料表結構 `rescue`
 --
 
 CREATE TABLE `rescue` (
@@ -84,7 +84,7 @@ CREATE TABLE `rescue` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `rescue`
+-- 傾印資料表的資料 `rescue`
 --
 
 INSERT INTO `rescue` (`id`, `memberID`, `title`, `date`, `type`, `amount`, `city`, `town`, `address`, `lost`, `img`, `reason`, `detail`, `need`, `responsibility`) VALUES
@@ -93,15 +93,12 @@ INSERT INTO `rescue` (`id`, `memberID`, `title`, `date`, `type`, `amount`, `city
 (6, 1, '發現田間路旁有一隻狗，前腳好像受重傷', '2022-03-07 07:55:32', '狗', 1, '臺南市', '中西區', '向上路五段27號', '是', './upload/20220307_155532.png', '需要醫療協助', '在路邊看到一只狗受重傷', '尋求安置協助', '可提供安置照顧空間, 願意負擔救援所需費用, 願意負擔救援所需物資'),
 (8, 10, '被棄養尋找新家腳有點受傷的小狗', '2022-03-08 02:28:24', '狗', 1, '臺中市', '北區', '中正路附近', '否', './upload/20220308_102824.png', '右前腳疑似被大狗咬傷', '晚上發現在街上遊蕩發現，疑似被棄養有項圈', '傷病就醫, 尋求安置協助', '可自行親送至外縣市, 願意負擔救援所需費用'),
 (9, 10, '疑似懷孕的玳瑁母貓', '2022-03-08 02:31:35', '貓', 1, '臺中市', '清水區', '延平路附近', '否', './upload/20220308_103135.png', '貓咪疑似懷孕', '已經用盡各種方式誘捕\r\n可惜貓媽太聰明都跑掉了\r\n最近天冷，實在很怕她生了來不及安置\r\n只好上來徵求\r\n只需要幫忙誘捕\r\n後續我們會先帶去醫院檢查、安置以及送養\r\n我們會貼補您車馬費', '尋求誘捕協助', '可提供安置照顧空間, 願意負擔救援所需費用, 願意負擔救援所需物資'),
-(10, 10, '土城流浪大型親人米克斯', '2022-03-11 05:06:53', '狗', 1, '新北市', '土城區', '金城路三段附近', '是', './upload/20220311_130653.png', '脖子上有綠色項圈，項圈和身體都不是很髒，應該走失或被遺棄不久；附近大型野狗群聚很多，我擔心他有危險', '發現時狗狗已經瘦弱見骨，後腿明顯受傷行動不便，急需救援', '傷病就醫, 尋求安置協助', '願意負擔救援所需費用, 願意負擔救援所需物資'),
-(13, 1, '98799879797', '2022-03-10 05:53:00', '狗', 1, '基隆市', '仁愛區', '大墩路10號', '是', './upload/20220310_135300.jpg', '564as6fs', 'asdfs4+654f', '傷病就醫, 借誘捕籠', '救援完成後可自行接回'),
-(14, 1, '132131', '2022-03-10 06:13:54', '狗', 1, '基隆市', '仁愛區', '大墩路10號', '是', './upload/20220310_141354.jpg', '123', '123', '傷病就醫, 借誘捕籠', '可提供安置照顧空間, 可自行親送至外縣市'),
-(15, 19, '231', '2022-03-11 01:42:16', '貓', 1, '臺北市', '中正區', '大墩路10號', '是', './upload/20220311_094216.png', '3213', '23131', '傷病就醫, 借誘捕籠', '可提供安置照顧空間');
+(10, 10, '土城流浪大型親人米克斯', '2022-03-11 05:06:53', '狗', 1, '新北市', '土城區', '金城路三段附近', '是', './upload/20220311_130653.png', '脖子上有綠色項圈，項圈和身體都不是很髒，應該走失或被遺棄不久；附近大型野狗群聚很多，我擔心他有危險', '發現時狗狗已經瘦弱見骨，後腿明顯受傷行動不便，急需救援', '傷病就醫, 尋求安置協助', '願意負擔救援所需費用, 願意負擔救援所需物資');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `stray`
+-- 資料表結構 `stray`
 --
 
 CREATE TABLE `stray` (
@@ -126,7 +123,7 @@ CREATE TABLE `stray` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `stray`
+-- 傾印資料表的資料 `stray`
 --
 
 INSERT INTO `stray` (`id`, `memberID`, `title`, `type`, `ear`, `chip`, `ligation`, `nickname`, `gender`, `city`, `town`, `address`, `appearance`, `img`, `contact`, `reason`, `detail`, `date`) VALUES
@@ -135,14 +132,12 @@ INSERT INTO `stray` (`id`, `memberID`, `title`, `type`, `ear`, `chip`, `ligation
 (6, 1, '家裡的愛狗遺失，叫吉利', '狗', '是', '是', '是', '吉利', '男', '屏東縣', '屏東市', '愛國巷27號', '淡棕色', './upload/20220307_160313.png', '手機聯繫0987124343', NULL, '早上起來發現不見了', '2022-03-07 16:00:00'),
 (8, 10, ' 我們家內內不見了', '貓', '否', '是', '是', '內內', '男', '臺中市', '新社區', '興義街', '臉部右眼有一塊黑點', './upload/20220308_111134.png', '0922684155 - 陳小姐\r\n', NULL, '昨天有人來家裡裝冷氣，不知道是不是嚇到，隔天早上就不見了', '2022-03-07 16:00:00'),
 (9, 10, '協尋愛犬 小白', '狗', '否', '否', '否', '小白', '男', '新北市', '鶯歌區', '山埔路165巷', '特徵三角立耳.四腳掌剛被剃毛', './upload/20220308_111345.png', '陳先生09XX-XXX-XXX', NULL, '今天早上鄰居外出，先生開門沒注意小白走出去了，後來發現一直沒有看到愛犬，才驚覺小白不見了，後續找了很多地方，但是都沒有看到蹤影，主人目前非常擔心', '2022-03-07 16:00:00'),
-(12, 10, ' 虎斑貓弟弟～鐵頭走失了', '貓', '否', '否', '否', '鐵頭', '男', '高雄市', '鳳山區', '建國路三段', '傷疤缺毛 (小處不明顯)。叫聲似嬰孩啼哭聲。個性內向怕人，熟悉後會自動撒嬌', './upload/20220311_131212.png', '丁小姐 0911222333(手機 / line ID 號碼同)', '', '要帶去打預防針時，半路掙脫袋籠出走', '2022-03-11 05:12:16'),
-(13, 1, '2132121', '狗', '是', '是', '是', '123', '男', '新北市', '萬里區', '大墩路10號123', '12312', './upload/20220310_142049.jpeg', '213', NULL, '213', '2022-03-10 06:20:49'),
-(14, 19, '132121', '狗', '是', '是', '是', '21', '男', '基隆市', '仁愛區', '大墩路10號', '21615', './upload/20220311_094454.png', '561561', NULL, '61651', '2022-03-11 01:44:54');
+(12, 10, ' 虎斑貓弟弟～鐵頭走失了', '貓', '否', '否', '否', '鐵頭', '男', '高雄市', '鳳山區', '建國路三段', '傷疤缺毛 (小處不明顯)。叫聲似嬰孩啼哭聲。個性內向怕人，熟悉後會自動撒嬌', './upload/20220311_131212.png', '丁小姐 0911222333(手機 / line ID 號碼同)', '', '要帶去打預防針時，半路掙脫袋籠出走', '2022-03-11 05:12:16');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- 資料表結構 `users`
 --
 
 CREATE TABLE `users` (
@@ -160,75 +155,75 @@ CREATE TABLE `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
+-- 傾印資料表的資料 `users`
 --
 
 INSERT INTO `users` (`memberID`, `account`, `password`, `name`, `sex`, `birthday`, `cellphone`, `hide`, `city`, `town`, `img`) VALUES
-(1, 'guest@mail.com', '123', '阿凱', '男', '1997-10-13', '(0968) 568-854', '隱藏', '台北市', '大安區師大路 20 號', './images/indexlogo.jpg	'),
-(2, 'firemoon1013@gmail.com', '123', '梁建功', '男', '1997-10-13', '0988451401', '隱藏', '臺中市', '西區', './upload/20220304_184429.jpg'),
+(1, 'guest@mail.com', '202cb962ac59075b964b07152d234b70', '阿凱', '男', '1997-10-13', '(0968) 568-854', '隱藏', '台北市', '大安區師大路 20 號', './images/indexlogo.jpg	'),
+(2, 'firemoon1013@gmail.com', '202cb962ac59075b964b07152d234b70', '梁建功', '男', '1997-10-13', '0988451401', '隱藏', '臺中市', '西區', './upload/20220304_184429.jpg'),
 (10, '123@mail.com', '202cb962ac59075b964b07152d234b70', 'JJJ', '女', '2022-03-04', '123456789', '公開', '臺中市', '中區', './upload/20220308_0939010.png'),
-(11, '1234@mail.com', '123', '好睡貓', '女', '2020-02-20', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(12, '1013@mail.com', '123', '梁建功2', '男', '2022-03-05', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(13, 'firemoon10131@gmail.com', '123', '梁建功', '男', '2022-03-09', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
+(11, '1234@mail.com', '202cb962ac59075b964b07152d234b70', '好睡貓', '女', '2020-02-20', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
+(12, '1013@mail.com', '202cb962ac59075b964b07152d234b70', '梁建功2', '男', '2022-03-05', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
+(13, 'firemoon10131@gmail.com', '202cb962ac59075b964b07152d234b70', '梁建功', '男', '2022-03-09', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
 (15, 'guest2@mail.com', '202cb962ac59075b964b07152d234b70', 'G3', '男', '2022-03-10', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
 (16, 'tonyliang9@gmail.com', '202cb962ac59075b964b07152d234b70', '梁建功', '男', '1997-10-13', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
 (17, 'guest3@mail.com', '202cb962ac59075b964b07152d234b70', 'G3', '男', '2022-03-11', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(18, 'apple1234@mail.com', 'e10adc3949ba59abbe56e057f20f883e', '路易吉', '男', '1993-10-11', '0912345678', '隱藏', '', '', './upload/20220311_0928480.png'),
+(18, 'apple1234@mail.com', '202cb962ac59075b964b07152d234b70', '路易吉', '男', '1993-10-11', '0912345678', '隱藏', '', '', './upload/20220311_0928480.png'),
 (20, 'JJJ@mail.com', '202cb962ac59075b964b07152d234b70', 'QQQ', '男', '2022-03-01', NULL, NULL, NULL, NULL, './images/indexlogo.jpg'),
-(22, 'mayr81214@gmail.com', 'caf1a3dfb505ffed0d024130f58c5cfa', '葉登發', '男', '2022-03-17', NULL, NULL, NULL, NULL, './images/indexlogo.jpg');
+(22, 'mayr81214@gmail.com', '202cb962ac59075b964b07152d234b70', '葉登發', '男', '2022-03-17', NULL, NULL, NULL, NULL, './images/indexlogo.jpg');
 
 --
--- Indexes for dumped tables
+-- 已傾印資料表的索引
 --
 
 --
--- Indexes for table `adopt`
+-- 資料表索引 `adopt`
 --
 ALTER TABLE `adopt`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `rescue`
+-- 資料表索引 `rescue`
 --
 ALTER TABLE `rescue`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `stray`
+-- 資料表索引 `stray`
 --
 ALTER TABLE `stray`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- 資料表索引 `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`memberID`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- 在傾印的資料表使用自動遞增(AUTO_INCREMENT)
 --
 
 --
--- AUTO_INCREMENT for table `adopt`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `adopt`
 --
 ALTER TABLE `adopt`
   MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `rescue`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `rescue`
 --
 ALTER TABLE `rescue`
-  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `stray`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `stray`
 --
 ALTER TABLE `stray`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `users`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `users`
 --
 ALTER TABLE `users`
   MODIFY `memberID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
