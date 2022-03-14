@@ -1,0 +1,80 @@
+body {
+background-color: black;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid button {
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+    border-radius: 40px;
+    border: 5px solid black;
+    outline: none;
+    background-color: rgb(65, 65, 65);
+}
+
+.grid button:hover {
+    background-color: gray;
+    color: white;
+}
+
+#clear {
+    background-color: lightgray;
+    color: black;
+}
+
+#clear:hover {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+#delete {
+    background-color: lightgray;
+    color: black;
+}
+
+#delete:hover {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+#operation {
+    background-color: orange;
+}
+
+#operation:hover {
+    background-color: rgb(255, 200, 100);
+}
+
+.span {
+    grid-column: span 2;
+}
+
+.text {
+    grid-column: 1 / -1;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-break: break-all;
+}
+
+#input {
+    
+    color: white;
+    font-size: 30px;
+}
+
+#output {
+    color: white;
+    font-size: 50px;
+}
+

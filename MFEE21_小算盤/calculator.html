@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小算盤</title>
+
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="js/calculator.js"></script>
+
+</head>
+<body>
+
+<div class="grid">
+    <div class="text">
+      <div id="input"></div>
+      <div id="output">0</div>
+    </div>
+    <button id="clear" onclick="btnClear()" class="span">AC</button>
+    <button id="delete" onclick="btuDelete()">DEL</button>
+    <button id="operation" onclick="btnClick(this)">/</button>
+    <button onclick="btnClick(this)">7</button>
+    <button onclick="btnClick(this)">8</button>
+    <button onclick="btnClick(this)">9</button>
+    <button id="operation" onclick="btnClick(this)">*</button>
+    <button onclick="btnClick(this)">4</button>
+    <button onclick="btnClick(this)">5</button>
+    <button onclick="btnClick(this)">6</button>
+    <button id="operation" onclick="btnClick(this)">-</button>
+    <button onclick="btnClick(this)">1</button>
+    <button onclick="btnClick(this)">2</button>
+    <button onclick="btnClick(this)">3</button>
+    <button id="operation" onclick="btnClick(this)">+</button>
+    <button onclick="btnClick(this)">.</button>
+    <button onclick="btnClick(this)" class="span">0</button>
+    <button id="operation" onclick="btnEqual()">=</button>
+</div>
+
+</body>
+</html>
